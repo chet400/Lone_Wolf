@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FUTURE</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 250px;
+  right: 330px;
+  border: 10px solid transparent;
+  z-index: 9;
+}
+
+
+.form-container {
+  max-width: 300px;
+  padding: 8px;
+  background-color: transparent;
+}
+
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 13px 0;
+  border: 4px solid #ff09a1;
+  background: #e2d410;
+}
+
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: rgb(15, 214, 25);
+  outline: none;
+}
+
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor:pointer;
+  width: 328px;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+
+.form-container .cancel {
+  background-color: red;
+}
+
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.home{
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left:340px;
+  top:574px;
+}
+.home:hover{
+ 
+  position: absolute;
+  width:80px;
+  height:80px;
+
+
+}
+.shop1234{
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left:475px;
+  top:570px;
+
+
+}
+.shop1234:hover{
+  position: absolute;
+  width:90px;
+  height:90px;
+}
+.shop12345:hover{
+  position: absolute;
+  width:90px;
+  height:90px;
+}
+
+.shop12345{
+
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left:620px;
+  top:574px;
+
+
+}
+.rectangle {
+  position: absolute;
+  left:280px;
+  top:550px;
+  height: 100px;
+  width: 470px;
+  background-color: transparent;
+  border:9px solid rgb(255, 0, 191);
+}
+
+
+      .shop{
+        position: absolute;
+  left:675px;
+  top: 10px;
+  cursor: pointer;
+              
+
+    color: #ff09a1;
+   
+      border-color: violet;
+      font-weight: 700;
+      background-color:transparent;
+      font-size: 30px;
+      text-decoration: none;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.shop:hover{
+        font-size: 50px;
+      
+}
+
+
+
+
+.contact{
+        color: #d0ff00b0;
+    
+      border-color: violet;
+      font-weight: 600;
+      background-color:transparent;
+      font-size: 30px;
+      text-decoration: none;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.shop12{
+        position: absolute;
+  left: 520px;
+  top: 10px;
+              cursor: pointer;
+
+    color: #ff09a1;
+    border-color: violet;
+      font-weight: 600;
+      background-color:transparent;
+      font-size: 30px;
+      text-decoration: none;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.shop13{
+        position: absolute;
+  left: 820px;
+  top: 10px;
+              cursor: pointer;
+    color: #ff09a1;
+   
+      border-color: violet;
+      font-weight: 600;
+      background-color:transparent;
+      font-size: 30px;
+      text-decoration: none;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.typewriter {
+   font-family: 'Montserrat', sans-serif;
+	 color: white;
+
+}
+
+.typewriter-text {
+  	overflow: hidden;
+  	letter-spacing: 2px;
+ 	animation: typing 5s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-size: 28px;
+    color: rgb(21, 219, 143);
+    font-weight: 700;
+    border-right: 4px solid rgb(255, 0, 179);
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: orange; 
+    }
+}
+
+
+
+    body{
+            background-image: url("Back3.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+        }
+        
+</style>
+</head>
+
+<link rel = "icon" href =
+"IEEE_whitenobg.png"	type = "image/x-icon">
+<div class="rectangle"></div>
+<div class="form-popup" id="myForm">
+  <form class="form-container">
+ 
+    <label class="contact" for="email"><b>CONTACT</b></label>
+    <input type="text" placeholder="Enter contact number" name="email" required>
+
+    <label class="contact"for="psw"><b>CITY</b></label>
+    <input type="text" placeholder="Enter city" name="psw" required>
+
+    <button type="submit" class="btn">SUBMIT</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">NOT INTERESTED</button>
+  </form>
+  <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        </script>
+      
+</div>
+<input type="image"  class="shop1234" onclick="openForm()" src="output-onlinepngtools.png"> 
+<input type="image"  class="home"  src="d85ac8c7-a7fb-46b3-864f-f4a728cefc15.png"> 
+<input type="image" class="shop12345" onclick="openForm1()"src="output-onlinepngtools (1).png"> 
+
+<div class="typewriter">
+  <div class="typewriter-text"><p>People often think that future is all about flying cars
+    ,robot</p><p> Companies are all
+      the time investing</p><p> more money on research and
+       development.</p><p> This indicates that companies and 
+       government are</p><p> interested to achieve and find 
+       new technological inventions </p><p>that would change
+        the markets.</p> </div>
+</div>
+
+</html>
